@@ -30,7 +30,7 @@ This solution is developed using the AWS Cloud Development Kit (CDK).
 
 ## Architecture
 
-![Alt text](images/Amazon-Inspector-Findings-Reporter.png "Flow chart")
+![Alt text](images/AWS-Sample-Inspector-Findings-Report.png "Flow chart")
 
 1. **Scheduled EventBridge Rule** invokes **Report Generator** Lambda function periodically (e.g. every 24 hours)
 2. **Report Generator** creates Amazon Inspector findings reports, encrypts them with an AWS Key Management Services (KMS) Customer managed key(CMK)

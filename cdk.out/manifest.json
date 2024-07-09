@@ -1,0 +1,155 @@
+{
+  "version": "36.0.0",
+  "artifacts": {
+    "AmazonInspectorFindingsReporterCdkStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "AmazonInspectorFindingsReporterCdkStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "AmazonInspectorFindingsReporterCdkStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "AmazonInspectorFindingsReporterCdkStack.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/af517b69bb5573ed9a1cf2e5a5e748e88318f97fffbc938c7554849b9736447e.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "AmazonInspectorFindingsReporterCdkStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "AmazonInspectorFindingsReporterCdkStack.assets"
+      ],
+      "metadata": {
+        "/AmazonInspectorFindingsReporterCdkStack/InspectorReportBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InspectorReportBucket70997582"
+          }
+        ],
+        "/AmazonInspectorFindingsReporterCdkStack/InspectorReportBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InspectorReportBucketPolicy395310DA"
+          }
+        ],
+        "/AmazonInspectorFindingsReporterCdkStack/InspectorReportBucket/Notifications/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InspectorReportBucketNotificationsE9E857E4"
+          }
+        ],
+        "/AmazonInspectorFindingsReporterCdkStack/InspectorReportBucket/AllowBucketNotificationsToAmazonInspectorFindingsReporterCdkStackReportSenderFunctionB80EBE2D": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InspectorReportBucketAllowBucketNotificationsToAmazonInspectorFindingsReporterCdkStackReportSenderFunctionB80EBE2D2371D28C"
+          }
+        ],
+        "/AmazonInspectorFindingsReporterCdkStack/InspectorReportCmk/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InspectorReportCmkACFA4D53"
+          }
+        ],
+        "/AmazonInspectorFindingsReporterCdkStack/InspectorLambdaRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InspectorLambdaRoleA3B8AE05"
+          }
+        ],
+        "/AmazonInspectorFindingsReporterCdkStack/InspectorLambdaRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InspectorLambdaRoleDefaultPolicy64C7FE45"
+          }
+        ],
+        "/AmazonInspectorFindingsReporterCdkStack/InspectorReportFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InspectorReportFunctionDDBFD8E5"
+          }
+        ],
+        "/AmazonInspectorFindingsReporterCdkStack/ReportSenderFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ReportSenderFunction1DBC5148"
+          }
+        ],
+        "/AmazonInspectorFindingsReporterCdkStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleB6FB88EC"
+          }
+        ],
+        "/AmazonInspectorFindingsReporterCdkStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleDefaultPolicy2CF63D36"
+          }
+        ],
+        "/AmazonInspectorFindingsReporterCdkStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db8347ECC3691"
+          }
+        ],
+        "/AmazonInspectorFindingsReporterCdkStack/Rules/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Rules379FE035"
+          }
+        ],
+        "/AmazonInspectorFindingsReporterCdkStack/Rules/AllowEventRuleAmazonInspectorFindingsReporterCdkStackInspectorReportFunction7586F5C9": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RulesAllowEventRuleAmazonInspectorFindingsReporterCdkStackInspectorReportFunction7586F5C96BC8C7B2"
+          }
+        ],
+        "/AmazonInspectorFindingsReporterCdkStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/AmazonInspectorFindingsReporterCdkStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/AmazonInspectorFindingsReporterCdkStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/AmazonInspectorFindingsReporterCdkStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "AmazonInspectorFindingsReporterCdkStack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}

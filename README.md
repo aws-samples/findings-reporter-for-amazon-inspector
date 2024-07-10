@@ -110,7 +110,7 @@ source .venv/bin/activate
 ```
 2. Clone the repository:
 ```
-git clone git@ssh.gitlab.aws.dev:samzhan/amazon-inspector-findings-reporter.git
+git clone git@github.com:aws-samples/findings-reporter-for-amazon-inspector.git
 ```
 3. Copy all the files within the directory of `amazon-inspector-findings-reporter` paste and replace all files to your own CDK project
 directory that you created in Step 1. 
